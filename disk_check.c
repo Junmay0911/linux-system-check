@@ -20,7 +20,6 @@ int main(void) {
     used_user = total - avail;
 
     printf("[Disk Information]\n");
-    printf("---------------------\n");
     printf("Total          : %llu MB\n", total / 1024 / 1024);
     printf("Used (system)  : %llu MB\n", used_sys / 1024 / 1024);
     printf("Used (user)    : %llu MB\n", used_user / 1024 / 1024);

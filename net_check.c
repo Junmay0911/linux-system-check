@@ -20,9 +20,8 @@ int main(void) {
         char iface[32];
         unsigned long long rx, tx;
 
-        sscanf(line,
-            " %31[^:]: %llu %*llu %*llu %*llu %*llu %*llu %*llu %*llu %llu",
-            iface, &rx, &tx);
+        scanf("%31[^:]: %llu %*u %*u %*u",
+            iface, &rx);
 
         if (strcmp(iface, "lo") == 0)
             continue;
